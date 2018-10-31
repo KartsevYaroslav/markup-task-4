@@ -1,0 +1,59 @@
+.main_block
+{
+    margin: 10px;
+}
+
+.outer_block
+{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #d3d3d3;
+}
+
+.inner_block
+{
+    max-width: 90%;
+    max-height: 90%;
+    width: auto;
+    height: 100%;
+    margin: 5% auto;
+}
+
+.inner_block img
+{
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: 70%;
+    margin: 0 auto;
+}
+
+.cat_name a
+{
+    color: black;
+    text-decoration: none;
+}
+
+input[id='tile']:checked ~ .main_block .outer_block
+{
+    display: inline-block;
+    height: 500px;
+    overflow: hidden;
+}
+
+input[id='tile']:checked ~ .main_block .outer_block .inner_block .text
+{
+    margin: 5%;
+}
+
+input[id='tile']:checked ~ .main_block .outer_block .inner_block
+{
+    margin: 0;
+    max-width: 100%;
+}
+
+input[id='tile']:checked ~ .main_block .outer_block .inner_block img
+{
+    width: 100%;
+    object-fit: cover;
+}
