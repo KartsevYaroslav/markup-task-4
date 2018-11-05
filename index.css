@@ -27,12 +27,6 @@
     margin: 5% auto;
 }
 
-.inner-block .text:hover
-{
-    font-weight: bold;
-    font-style: oblique;
-}
-
 .inner-block img
 {
     display: block;
@@ -86,6 +80,12 @@
     overflow: hidden;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+}
+
+.long:hover
+{
+    overflow: auto;
+    -webkit-box-orient: initial;
 }
 
 .tile-mode:checked ~ .main-block .cat-card
