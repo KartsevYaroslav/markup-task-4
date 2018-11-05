@@ -27,6 +27,12 @@
     margin: 5% auto;
 }
 
+.inner-block .text:hover
+{
+    font-weight: bold;
+    font-style: oblique;
+}
+
 .inner-block img
 {
     display: block;
